@@ -1,57 +1,35 @@
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+<!DOCTYPE html>
+<html lang="en">
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Demo</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: Please add the following <FORM> element to your page.             -->
-    <!--  ----------------------------------------------------------------------  -->
-    
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-    
-    <input type=hidden name="oid" value="00D5f000001B46k">
-    <input type=hidden name="retURL" value="https:/www.makanahealthcare.com/thankyou.html">
-    
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-    <!--  these lines if you wish to test in debug mode.                          -->
-    <!--  <input type="hidden" name="debug" value=1>                              -->
-    <!--  <input type="hidden" name="debugEmail"                                  -->
-    <!--  value="salesforce@jayonsoftware.com">                                   -->
-    <!--  ----------------------------------------------------------------------  -->
-    
-    <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-    
-    <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-    
-    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-    
-    <label for="zip">Zip</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
-    
-    <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-    
-    Date of Birth:<span class="dateInput dateOnlyInput"><input  id="00N5f000003qjhE" name="00N5f000003qjhE" size="12" type="text" /></span><br>
-    
-    Sex:<select  id="00N5f000003dsMj" name="00N5f000003dsMj" title="Sex"><option value="">--None--</option><option value="Male">Male</option>
-    <option value="Female">Female</option>
-    </select><br>
-    
-    Tobacco Use:<input  id="00N5f000003dsMy" name="00N5f000003dsMy" type="checkbox" value="1" /><br>
-    
-    Hospital (Part A) effective date:<span class="dateInput dateOnlyInput"><input  id="00N5f000003dsNS" name="00N5f000003dsNS" size="12" type="text" /></span><br>
-    
-    Medical (Part B) effective date:<span class="dateInput dateOnlyInput"><input  id="00N5f000003dsNc" name="00N5f000003dsNc" size="12" type="text" /></span><br>
-    
-    <label for="lead_source">Lead Source</label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Web">Web</option>
-    <option value="Phone Inquiry">Phone Inquiry</option>
-    <option value="Partner Referral">Partner Referral</option>
-    <option value="Other">Other</option>
-    </select><br>
-    
-    <input type="submit" name="submit">
-    
-    </form>
-    
+<body>
+    <section class="contact-clean">
+        <form method="post" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"><input class="form-control" type="hidden" name="oid" value="00D5f000001B46k"><input class="form-control" type="hidden" name="retURL" value="https:/www.makanahealthcare.com/thankyou.html">
+            <h2 class="text-center">Contact us</h2>
+            <div class="mb-3"><input class="form-control" type="text" name="first_name" placeholder="First Name"></div>
+            <div class="mb-3"><input class="form-control" type="text" name="last_name" placeholder="Last Name"></div>
+            <div class="mb-3"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div><input class="form-control" type="number" name="zip" placeholder="Zip"><input class="form-control" type="tel" name="phone" placeholder="Phone">
+            <div class="mb-3"></div><label class="form-label">Date of Birth<br></label>
+            <div><input class="form-control" type="date" name="00N5f000003qjhE"><label class="form-label">Sex</label><select class="form-select" name="00N5f000003dsMj">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><select class="form-select" name="00N5f000003dsMy">
+                    <option value="TRUE">Yes</option>
+                    <option value="FALSE" selected="">No</option>
+                </select></div>
+            <div class="mb-3"></div><label class="form-label">Hospital (Part A) effective date</label><input class="form-control" type="date" name="00N5f000003dsNS"><label class="form-label">Medical (Part B) effective date</label><input class="form-control" type="date" name="00N5f000003dsNc"><button class="btn btn-primary" type="submit">send </button>
+            <div></div>
+        </form>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
