@@ -5,7 +5,7 @@
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Demo</title>
+    <title>Makana Health</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -14,8 +14,8 @@
 <body>
     <section class="contact-clean">
         <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-            <input type=hidden name="oid" value="00D5f000001B46k">
-            <input type=hidden name="retURL" value="https:/www.makanahealthcare.com/thankyou.html">
+            <input type="hidden" name="oid" value="00D5f000001B46k">
+            <input type="hidden" name="retURL" value="https:/www.makanahealthcare.com/thankyou.html">
             <input type="hidden" name="lead_source" value="Web">
             <picture><img src="assets/img/MakanaHealth.png"></picture>
             <h2 class="text-center">Contact Us</h2>
@@ -33,21 +33,19 @@
                         <option value="FALSE" selected="">No</option>
                     </select></div>
                     <label class="form-label">Date of Birth<br></label>
-                    <input class="date form-control" type="date" name="00N5f000003qjhE">
+                    <input class="form-control" type="text" name="00N5f000003qjhE">
             </div>
             <div class="mb-3"><label class="form-label">Hospital (Part A) effective date</label>
-                <input class="date form-control" type="date" name="00N5f000003dsNS"></div>
+                <input class="form-control" type="text" name="00N5f000003dsNS"></div>
             <div class="mb-3"></div>
-            <div><label class="date form-label">Medical (Part B) effective date</label><input class="form-control" type="date" name="00N5f000003dsNc"></div>
+            <div><label class="form-label">Medical (Part B) effective date</label>
+                <input class="form-control" type="text" name="00N5f000003dsNc"></div>
             <div class="text-end"><a class="text-end" href="https://makanaagent-developer-edition.na163.force.com/s/login/">Agent Login</a></div><button class="btn btn-primary" type="submit">send </button>
         </form>
     </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(".date").datepicker({
-          format: "dd-mmm-yyyy",
-        });
-      </script>
+    <!-- <script>$('.date').datetimepicker({format: 'DD-MM-YYYY'}); -->
+    </script>
 </body>
 
 </html>
