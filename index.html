@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Demo</title>
@@ -12,21 +13,30 @@
 
 <body>
     <section class="contact-clean">
-        <form method="post" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"><input class="form-control" type="hidden" name="oid" value="00D5f000001B46k"><input class="form-control" type="hidden" name="retURL" value="https:/www.makanahealthcare.com/thankyou.html">
-            <h2 class="text-center">Contact us</h2>
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <input type=hidden name="oid" value="00D5f000001B46k">
+            <input type=hidden name="retURL" value="https:/www.makanahealthcare.com/thankyou.html">
+            <input type="hidden" name="lead_source" value="Web">
+            <picture><img src="assets/img/MakanaHealth.png"></picture>
+            <h2 class="text-center">Contact Us</h2>
             <div class="mb-3"><input class="form-control" type="text" name="first_name" placeholder="First Name"></div>
             <div class="mb-3"><input class="form-control" type="text" name="last_name" placeholder="Last Name"></div>
-            <div class="mb-3"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div><input class="form-control" type="number" name="zip" placeholder="Zip"><input class="form-control" type="tel" name="phone" placeholder="Phone">
-            <div class="mb-3"></div><label class="form-label">Date of Birth<br></label>
-            <div><input class="form-control" type="date" name="00N5f000003qjhE"><label class="form-label">Sex</label><select class="form-select" name="00N5f000003dsMj">
+            <div class="mb-3"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"></div>
+            <div class="mb-3"><input class="form-control" type="number" name="zip" placeholder="Zip"></div>
+            <div class="mb-3"><input class="form-control" type="tel" name="phone" placeholder="Phone"></div>
+            <div><label class="form-label">Sex</label><select class="form-select" name="00N5f000003dsMj">
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
-                </select><select class="form-select" name="00N5f000003dsMy">
-                    <option value="TRUE">Yes</option>
-                    <option value="FALSE" selected="">No</option>
-                </select></div>
-            <div class="mb-3"></div><label class="form-label">Hospital (Part A) effective date</label><input class="form-control" type="date" name="00N5f000003dsNS"><label class="form-label">Medical (Part B) effective date</label><input class="form-control" type="date" name="00N5f000003dsNc"><button class="btn btn-primary" type="submit">send </button>
-            <div></div>
+                </select>
+                <div><label class="form-label">Smoker</label><select class="form-select" name="00N5f000003dsMy">
+                        <option value="TRUE">Yes</option>
+                        <option value="FALSE" selected="">No</option>
+                    </select></div><label class="form-label">Date of Birth<br></label><input class="form-control" type="date" name="00N5f000003qjhE">
+            </div>
+            <div class="mb-3"><label class="form-label">Hospital (Part A) effective date</label><input class="form-control" type="date" name="00N5f000003dsNS"></div>
+            <div class="mb-3"></div>
+            <div><label class="form-label">Medical (Part B) effective date</label><input class="form-control" type="date" name="00N5f000003dsNc"></div>
+            <div class="text-end"><a class="text-end" href="https://makanaagent-developer-edition.na163.force.com/s/login/">Agent Login</a></div><button class="btn btn-primary" type="submit">send </button>
         </form>
     </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
