@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Makana Health</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
-    <section class="contact-clean">
-        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+   <head>
+      <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <title>Makana Health</title>
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
+   </head>
+   <body>
+      <section class="contact-clean">
+         <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
             <input type=hidden name="oid" value="00D5f000001B46k">
             <input type=hidden name="retURL" value="https://www.makanahealthcare.com/thankyou.html">
             <input type="hidden" name="lead_source" value="Web">
@@ -24,42 +22,42 @@
             <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email"></div>
             <div class="mb-3"><input class="form-control" type="number" name="zip" placeholder="Zip"></div>
             <div class="mb-3"><input class="form-control" type="tel" name="phone" placeholder="Phone"></div>
-            <div><label class="form-label">Sex</label><select class="form-select" name="00N5f000003dsMj">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-                <div><label class="form-label">Smoker</label>
-                    <select class="form-select" name="00N5f000003dsMy">
-                        <option value="TRUE">Yes</option>
-                        <option value="FALSE" selected="">No</option>
-                    </select>
-                </div>
-
-                <div><label class="form-label">Reason for Inquiry</label>
-                    <select class="form-select" name="00N5f000003fl7P">
-                        <option value="">--None--</option>
-                        <option value="Does not have Medicare Supplement Insurance">Does not have Medicare Supplement Insurance</option>
-                        <option value="Currently Paying too much">Currently Paying too much</option>
-                        <option value="Moving out of state">Moving out of state</option>
-                        <option value="Divorce">Divorce</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-
-                    <label class="form-label">Date of Birth<br></label>
-                    <input class="form-control" type="text" name="00N5f000003fXTD">
+            <div>
+               <label class="form-label">Sex</label>
+               <select class="form-select" name="00N5f000003dsMj">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+               </select>
+               <div>
+                  <label class="form-label">Smoker</label>
+                  <select class="form-select" name="00N5f000003dsMy">
+                     <option value="TRUE">Yes</option>
+                     <option value="FALSE" selected="">No</option>
+                  </select>
+               </div>
+               <div>
+                  <label class="form-label fw-bold">Reason for Inquiry</label>
+                  <select class="form-select fw-bold" name="00N5f000003fl7P">
+                     <option value="">--None--</option>
+                     <option value="Does not have Medicare Supplement Insurance">Does not have Medicare Supplement Insurance</option>
+                     <option value="Currently Paying too much">Currently Paying too much</option>
+                     <option value="Moving out of state">Moving out of state</option>
+                     <option value="Divorce">Divorce</option>
+                     <option value="Other">Other</option>
+                  </select>
+               </div>
+               <div>
+                  <label class="form-label fw-bold">Date of Birth</label>
+                  <input class="form-control fw-bold" type="text" name="00N5f000003fXTD">
+               </div>
             </div>
-
-                  <button class="btn btn-primary" type="submit">Request Info</button>
-
-                  <div class="text-end">
-                    <a class="text-end" href="https://makanaagent-developer-edition.na163.force.com/s/login/">Agent Login</a>
-                  </div>
-        </form>
-    </section>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <!-- <script>$('.date').datetimepicker({format: 'DD-MM-YYYY'}); -->
-    </script>
-</body>
-
+            <button class="btn btn-primary" type="submit">Request Info</button>
+            <div class="text-end">
+               <a class="text-end" href="https://makanaagent-developer-edition.na163.force.com/s/login/">Agent Login</a>
+            </div>
+         </form>
+      </section>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      </script>
+   </body>
 </html>
